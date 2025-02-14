@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        /* Inline CSS for Contact Me Page */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #4a4a4a;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            flex-grow: 1;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .sidebar button {
+            width: 200px;
+            padding: 15px;
+            background-color: #d3d3d3;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar button.active {
+            background-color: #808080;
+            color: white;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .contact-info a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            padding: 20px;
+            background-color: black;
+            font-size: 14px;
+            border-radius: 20px;
+            width: 90%;
+            margin: 80px auto 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">LHEANN CABASE</div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="index.html"><button>About ME</button></a>
+            <a href="subjects-taken.html"><button>Subjects Taken</button></a>
+            <a href="enrolled.html"><button>Enrolled</button></a>
+            <a href="contact.html"><button>Contact Me</button></a>
+            <a href="fav.html"><button>My Favorites</button></a>
+            <a href="gallery.html"><button>Gallery</button></a>
+        </div>
+        <div class="content">
+            <div class="contact-section">
+                <h2>Contact Me</h2>
+                <div class="contact-info">
+                    <p><strong>Contact Number:</strong> +63 906 193 4033</p>
+                    <p><strong>Facebook:</strong> <a href="https://www.facebook.com/lhnncbs/" target="_blank">Lheann Cabase</a></p>
+                    <p><strong>Email Address:</strong> <a href="mailto:lheann3121195@gmail.com">lheann3121195@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">&copy; 2024 - 2025 ITP4 | All Rights Reserved</div>
+
+    <script>
+        // Inline JavaScript for Contact Me Page (if applicable)
+        // For example, you can add form validation or other functionality here.
+        console.log("Contact Me Page Loaded");
+    </script>
+</body>
+</html>

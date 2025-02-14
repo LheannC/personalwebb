@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrolled</title>
+    <style>
+        /* Inline CSS for Enrolled Page */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #4a4a4a;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            flex-grow: 1;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .sidebar button {
+            width: 200px;
+            padding: 15px;
+            background-color: #d3d3d3;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar button.active {
+            background-color: #808080;
+            color: white;
+        }
+
+        .subject-table {
+            width: 85%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .subject-table th, .subject-table td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .subject-table th {
+            background-color: #808080;
+        }
+
+        .footer {
+            padding: 20px;
+            background-color: black;
+            font-size: 14px;
+            border-radius: 20px;
+            width: 90%;
+            margin: 80px auto 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">LHEANN CABASE</div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="index.html"><button>About ME</button></a>
+            <a href="subjects-taken.html"><button>Subjects Taken</button></a>
+            <a href="enrolled.html"><button>Enrolled</button></a>
+            <a href="contact.html"><button>Contact Me</button></a>
+            <a href="fav.html"><button>My Favorites</button></a>
+            <a href="gallery.html"><button>Gallery</button></a>
+        </div>
+        <div class="content">
+            <table id="enrolledTable" class="subject-table">
+                <tr>
+                    <th>Schedule</th>
+                    <th>Subject Name & Description</th>
+                    <th>Units</th>
+                </tr>
+                <tr>
+                    <td>01:00 - 04:00 PM FRI</td>
+                    <td>COM 1 - PURPOSIVE COMMUNICATION / MALAYUNING KOMUNIKASYON</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>04:10 - 06:10 PM W</td>
+                    <td>PE4 - PATH FIT 4: SPORTS (TEAM)</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>04:10 - 05:40 PM TTH</td>
+                    <td>PHILO1 - ETHICS / ETIKA</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>01:00 - 04:05 PM MW</td>
+                    <td>ITP4 - INTEGRATIVE PROGRAMMING & TECHNOLOGIES 1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>08:00 - 09:30 AM TTH</td>
+                    <td>ITP5 - NETWORKING 2 (CISCO 2: ROUTING PROTOCOLS & CONCEPTS)</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>02:35 - 04:05 PM TTH</td>
+                    <td>ITP6 - INTRODUCTION TO HUMAN COMPUTER INTERACTION</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>09:35 - 11:05 AM MW</td>
+                    <td>CSITS - INFORMATION MANAGEMENT</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">&copy; 2024 - 2025 ITP4 | All Rights Reserved</div>
+</body>
+</html>

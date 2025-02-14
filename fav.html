@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites</title>
+    <style>
+        /* Inline CSS for Favorites Page */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #4a4a4a;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            flex-grow: 1;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .sidebar button {
+            width: 200px;
+            padding: 15px;
+            background-color: #d3d3d3;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar button.active {
+            background-color: #808080;
+            color: white;
+        }
+
+        .favorites-section {
+            text-align: left;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .favorites-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .favorites-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .favorite-card {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .favorite-card strong {
+            font-style: italic;
+            color: #4a90e2;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            padding: 20px;
+            background-color: black;
+            font-size: 14px;
+            border-radius: 20px;
+            width: 90%;
+            margin: 40px auto 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">LHEANN CABASE</div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="index.html"><button>About ME</button></a>
+            <a href="subjects-taken.html"><button>Subjects Taken</button></a>
+            <a href="enrolled.html"><button>Enrolled</button></a>
+            <a href="contact.html"><button>Contact Me</button></a>
+            <a href="fav.html"><button>My Favorites</button></a>
+            <a href="gallery.html"><button>Gallery</button></a>
+        </div>
+        <div class="content">
+            <div class="favorites-section">
+                <h2>My Favorites – The Things That Make Me, Me</h2>
+                <div class="favorites-grid">
+                    <div class="favorite-card">
+                        <strong>🧡 Person:</strong> My mom – She’s been there my whole life, loving me for who I am, never changing, always by my side.
+                    </div>
+                    <div class="favorite-card">
+                        <strong>🍛 Food:</strong> Binagoongang Baboy – My mom’s cooking is undefeated, and this dish? Absolute comfort food.
+                    </div>
+                    <div class="favorite-card">
+                        <strong>🎶 Artists:</strong> The Weeknd, Frank Ocean, Lana Del Rey, Bruno Mars – Timeless music for every mood.
+                    </div>
+                    <div class="favorite-card">
+                        <strong>💚 Colors:</strong> Sage Green & Navy Blue – These colors look great on me and give off the right energy.
+                    </div>
+                    <div class="favorite-card">
+                        <strong>✈️ Traveling:</strong> Exploring new places with family or friends – It's all about the memories.
+                    </div>
+                    <div class="favorite-card">
+                        <strong>🎮 Video Games:</strong> Call of Duty Mobile & Pixels – Great for chilling and making friends.
+                    </div>
+                    <div class="favorite-card">
+                        <strong>🛍 Shopping:</strong> Retail therapy is real – I love buying clothes and random things for myself.
+                    </div>
+                    <div class="favorite-card">
+                        <strong>🎄 Holiday Season:</strong> No school, just good food, family time, and that cozy holiday vibe.
+                    </div>
+                    <div class="favorite-card">
+                        <strong>👟 Footwear:</strong> A good pair of shoes can make or break an outfit. Next on my wishlist? Nike Killshot 2.
+                    </div>
+                    <div class="favorite-card">
+                        <strong>🌧 Weather:</strong> Rain – The cool air, the sound, the vibe – it’s the ultimate chill weather.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">&copy; 2024 - 2025 ITP4 | All Rights Reserved</div>
+</body>
+</html>

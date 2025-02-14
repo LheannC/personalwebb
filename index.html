@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Inline CSS for About Me Page */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #4a4a4a;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            flex-grow: 1;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .sidebar button {
+            width: 200px;
+            padding: 15px;
+            background-color: #d3d3d3;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar button.active {
+            background-color: #808080;
+            color: white;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .profile-section img {
+            width: 240px;
+            height: 320px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .info {
+            text-align: left;
+        }
+
+        .info p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .info strong {
+            font-style: italic;
+        }
+
+        .footer {
+            padding: 20px;
+            background-color: black;
+            font-size: 14px;
+            border-radius: 20px;
+            width: 90%;
+            margin: 80px auto 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">LHEANN CABASE</div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="index.html"><button>About ME</button></a>
+            <a href="subjects-taken.html"><button>Subjects Taken</button></a>
+            <a href="enrolled.html"><button>Enrolled</button></a>
+            <a href="contact.html"><button>Contact Me</button></a>
+            <a href="fav.html"><button>My Favorites</button></a>
+            <a href="gallery.html"><button>Gallery</button></a>
+        </div>
+        <div class="content">
+            <div class="profile-section">
+                <img src="lhe1.jpg" alt="Profile Picture">
+                <div class="info">
+                    <p><strong>Full Name:</strong> Lheann Cabasa</p>
+                    <p><strong>Age:</strong> 20 years old</p>
+                    <p><strong>Date of Birth:</strong> June 9, 2004</p>
+                    <p><strong>Nationality:</strong> Filipino</p>
+                    <p><strong>Course & Year:</strong> BSIT - 2</p>
+                    <p><strong>School:</strong> Misamis University</p>
+                    <p><strong>Home Address:</strong> Kapatagan, Lanao del Norte</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">&copy; 2024 - 2025 ITP4 | All Rights Reserved</div>
+</body>
+</html>
